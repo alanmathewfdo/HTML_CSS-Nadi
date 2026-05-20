@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magazine Layout</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Grid Container */
+.magazine {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Main Story (Left Big Section) */
+.main-story {
+    background: #f9f9f9; 
+    padding: 20px;
+}
+
+/* Sidebar (Right Side) */
+.sidebar {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    background: #eee;
+    padding: 20px;
+}
+
+.article {
+    margin-bottom: 20px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #ddd;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="magazine">
+
+    <!-- 📰 MAIN STORY -->
+    <div class="main-story">
+        <h1>Main Story</h1>
+        <p>This is the main featured article of the magazine. It spans the full height of the layout.</p>
+
+        <div class="article">
+            <h3>Sub Article 1</h3>
+            <p>Details about sub article 1...</p>
+        </div>
+
+        <div class="article">
+            <h3>Sub Article 2</h3>
+            <p>Details about sub article 2...</p>
+        </div>
+    </div>
+
+    <!-- 📌 SIDEBAR -->
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+
+        <div class="article">
+            <h4>Trending</h4>
+            <p>Latest news and updates...</p>
+        </div>
+
+        <div class="article">
+            <h4>Ads</h4>
+            <p>Advertisement content here...</p>
+        </div>
+
+        <div class="article">
+            <h4>Quick Reads</h4>
+            <p>Short interesting stories...</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    © 2026 Magazine Layout
+</div>
+
+</body>
+</html>

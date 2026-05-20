@@ -1,0 +1,40 @@
+
+    body {
+        font-family: Arial;
+        background: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .social-bar {
+        display: flex;
+        gap: 20px;
+        background: white;
+        padding: 15px 20px;
+        border-radius: 10px;
+    }
+
+    .icon {
+    width: 80px;
+    height: 80px;
+}
+    .icon {
+    width: 120px;
+    height: 120px;
+    background-image: url('sprite.png');
+    background-repeat: no-repeat;
+    background-size: 500% 100%; /* 5 icons → 100% / 5 each */
+}
+
+    .icon:hover {
+        transform: scale(1.1);
+    }
+
+    /* Adjust these values based on sprite layout */
+    .fb { background-position: 0% 0; }
+    .tw { background-position: 25% 0; }
+    .ig { background-position: 50% 0; }
+    .li { background-position: 75% 0; }
+    .yt { background-position: 100% 0; }

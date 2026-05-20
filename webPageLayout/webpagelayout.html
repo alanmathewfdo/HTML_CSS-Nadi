@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 1 - Grid</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+          
+            display: flex;
+            justify-content: center;  
+            align-items: center;  
+            
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "nav nav"
+                "banner banner"
+                "sidebar content"
+                "footer footer";
+            grid-template-columns: 250px 1fr;
+            grid-template-rows: auto auto auto 1fr auto;
+            height: 110vh;
+            width: 160vh;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        header {
+            justify-content: space-between;
+            grid-area: header;
+            background: #4CAF50;
+            color: white;
+            height: 20px;
+            padding: 15px;
+        }
+
+        nav {
+            grid-area: nav;
+            text-align: center;
+            background: #4CAF50;
+            color: white;
+            padding: 15px; 
+            display: flex;
+            justify-content: space-between;
+            height: 60px; 
+        }
+
+        .banner {
+            grid-area: banner;
+            background: #2196F3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        aside {
+            grid-area: sidebar;
+            background: #f4f4f4;
+             padding: 20px; 
+        }
+
+        main {
+            grid-area: content;
+            background: #ddd;
+            padding: 20px; 
+        }
+
+        footer {
+            grid-area: footer;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        Logo
+       
+    </header>
+    <nav>Navigation</nav>
+    <div class="banner">
+        Header / Banner
+    </div>
+
+    <aside>
+        Sidebar
+    </aside>
+
+    <main>
+        Body Area
+    </main>
+
+    <footer>
+        Footer
+    </footer>
+
+</div>
+
+</body>
+</html>

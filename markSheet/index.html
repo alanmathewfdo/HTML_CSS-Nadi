@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mark Sheet</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        table {
+            position: absolute;
+            top: 200px;
+            width: 70%;
+            margin: auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        .markImg {
+            width: 800px;              /* adjust to your image width */
+            height: 900px;             /* adjust to your image height */
+            margin: auto;
+
+            background-image: url("Бланк свободный.jpeg");
+            background-size: 100% 100%;   /* fit exactly like template */
+            background-repeat: no-repeat;
+
+            position: relative;        /* important */
+        }
+
+        .topTable {
+            position: absolute;
+            top: 150px;
+            left: 120px;
+            width: 550px;
+        }
+
+/* Main marks table */
+        .mainTable {
+            position: absolute;
+            top: 300px;
+            left: 120px;
+            width: 550px;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 30px;
+            
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="markImg">
+        <div>
+    <table class="topTable">
+        <tr>
+            <td colspan="2">Name : ZORO</td>
+            <td colspan="2">Course Name : EEE</td>
+        </tr>
+        <tr>
+            <td >844939</td>
+            <td>123456</td>
+            <td colspan="2">rameswaram</td>
+        </tr>
+    </table>
+    <br>
+
+<table class="mainTable">
+
+    <!-- Title -->
+    <tr>
+        <th colspan="6" class="title">Student Mark Sheet</th>
+    </tr>
+
+    <!-- Student Info -->
+    <tr>
+        <td colspan="3">Name: ZORO</td>
+        <td colspan="3">Roll No: 101</td>
+    </tr>
+
+    <!-- Header -->
+    <tr>
+        <th rowspan="2">S.No</th>
+        <th rowspan="2">Subject</th>
+        <th colspan="3">Marks</th>
+        <th rowspan="2">Grade</th>
+    </tr>
+
+    <tr>
+        <th>Internal</th>
+        <th>External</th>
+        <th>Total</th>
+    </tr>
+
+    <!-- Data Rows -->
+    <tr>
+        <td>1</td>
+        <td>Maths</td>
+        <td>25</td>
+        <td>70</td>
+        <td>95</td>
+        <td>A+</td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Science</td>
+        <td>24</td>
+        <td>68</td>
+        <td>92</td>
+        <td>A+</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>English</td>
+        <td>22</td>
+        <td>65</td>
+        <td>87</td>
+        <td>A</td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>Social</td>
+        <td>23</td>
+        <td>66</td>
+        <td>89</td>
+        <td>A</td>
+    </tr>
+
+    <!-- Total Row -->
+    <tr>
+        <th colspan="4">Grand Total</th>
+        <th>363</th>
+        <th>A+</th>
+    </tr>
+
+</table>
+</div>
+</body>
+</html> 
